@@ -1,0 +1,60 @@
+$brand-brillant: rgb(255, 255, 0);
+$brand-deprecated: rgb(165, 154, 103);
+$brand-stream: rgb(147, 122, 178);
+
+$alk-red: rgb(227, 37, 34);
+$alk-green: rgb(94, 172, 37);
+$alk-darkgreen: rgb(0, 102, 74);
+$alk-blue: rgb(2, 102, 161);
+$alk-yellow: rgb(255, 214, 0);
+$alk-orange: rgb(235, 113, 29);
+$alk-pink: rgb(222, 0, 101);
+$alk-purple: rgb(114, 27, 96);
+
+
+.color-red{
+    background-color: $alk-red;
+    color:white;
+}
+.color-green{
+    background-color: $alk-green;
+    color:white;
+}
+.color-darkgreen{
+    background-color: $alk-darkgreen;
+    color:white;
+}
+.color-blue{
+    background-color: $alk-blue;
+    color:white;
+}
+.color-yellow{
+    background-color: $alk-yellow;
+    color:white;
+}
+.color-orange{
+    background-color: $alk-orange;
+    color:white;
+}
+.color-pink{
+    background-color: $alk-pink;
+    color:white;
+}
+.color-purple{
+    background-color: $alk-purple;
+    color:white;
+}
+
+
+.color-advertising {
+    color: $alk-orange;
+}
+.color-stream {
+    color: $alk-green;
+}
+.color-api {
+    color: $alk-yellow;
+}
+.color-company {
+    color: rgb(100, 100, 100);
+}
