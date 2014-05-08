@@ -1,0 +1,27 @@
+.placeholder {
+    border: 1px solid gray;
+    text-align: center;
+    color: gray;
+    vertical-align: middle;
+
+    &.placeholder-1 {
+        height: 80px;
+        line-height: 80px;
+    }
+    &.placeholder-2 {
+        height: 160px;
+        line-height: 160px;
+    }
+    &.placeholder-3 {
+        height: 240px;
+        line-height: 240px;
+    }
+    &.placeholder-4 {
+        height: 320px;
+        line-height: 320px;
+    }
+    &.placeholder-5 {
+        height: 400px;
+        line-height: 400px;
+    }
+}

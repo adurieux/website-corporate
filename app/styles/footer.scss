@@ -1,0 +1,35 @@
+footer {
+    margin-top: 60px;
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h2 {
+        margin: 0px;
+        padding: 4px 0px;
+        font-size: 14px;
+    }
+    ul {
+        padding: 0px;
+        li {
+            list-style-type: none;
+            line-height: 20px;
+            a {
+                color: inherit;
+            }
+            a:hover {
+                color: inherit;
+            }
+        }
+    }
+    .social {
+        a {
+            color: inherit;
+        }
+        a:hover {
+            color: inherit;
+        }
+    }
+}
+

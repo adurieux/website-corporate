@@ -1,0 +1,21 @@
+/* TEAM */
+    CEO:        Antoine Durieux
+    Twitter:    @antoinedurieux
+    Location:   Paris, France
+
+    CTO:        Antoine Perrin
+    Twitter:    @Perrinood
+    Location:   Paris, France
+
+
+/* SITE */
+    Standards:  HTML5, CSS3
+    Components: Modernizr, jQuery, AngularJS, Bootstrap, FontAwesome
+    Software:   Titan, Cassandra, ElasticSearch, Hadoop
+
+             _        _  __  ______   __  __   _____    _____    _____
+     /\     | |      | |/ / |  ____| |  \/  | |_   _|  / ____|  / ____|
+    /  \    | |      | ' /  | |__    | \  / |   | |   | |      | (___
+   / /\ \   | |      |  <   |  __|   | |\/| |   | |   | |       \___ \
+  / ____ \  | |____  | . \  | |____  | |  | |  _| |_  | |____   ____) |
+ /_/    \_\ |______| |_|\_\ |______| |_|  |_| |_____|  \_____| |_____/
