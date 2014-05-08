@@ -7,8 +7,17 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 @import "sass-bootstrap/lib/bootstrap";
 @import "navbar.scss";
 @import "home.scss";
+@import "stream.scss";
 @import "footer.scss";
 @import "cgu.scss";
+@import "sdk-dashboard/src/autocomplete.scss";
+
+
+@import "user/login/login.scss";
+@import "portlet.scss";
+@import "tile.scss";
+@import "metric.scss";
+@import "placeholder.scss";
 
 .browsehappy {
     margin: 0.2em 0;
@@ -22,8 +31,9 @@ body {
     padding-bottom: 0px;
 }
 
-h1 {
+#corporate h1 {
     color: $alk-orange;
 }
-h2 {
+#stream h1 {
+    color: $alk-green;
 }

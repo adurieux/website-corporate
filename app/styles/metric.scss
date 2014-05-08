@@ -1,0 +1,33 @@
+@import "colors.scss";
+
+.metric-container {
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    font-size: 20px;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+}
+.metric-figure {
+    font-weight: bold;
+}
+
+.metric-green-inverse {
+    background-color: $alk-green;
+    color: white;
+}
+
+.metric-orange-inverse {
+    background-color: $alk-orange;
+    color: white;
+}
+
+.metric-green {
+    border: 1px solid $alk-green;
+    color: $alk-green;
+}
+
+.metric-orange {
+    border: 1px solid $alk-orange;
+    color: $alk-orange;
+}

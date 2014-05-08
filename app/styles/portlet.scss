@@ -1,0 +1,157 @@
+@import "colors.scss";
+
+
+.portlet-container {
+    margin-bottom: 15px;
+}
+
+.portlet-container {
+    border: 1px solid;
+}
+
+.portlet-container .portlet-heading {
+    padding: 0 15px;
+}
+
+.portlet-container .portlet-heading h4 {
+    padding: 1px 0;
+    font-size: 16px;
+}
+
+.portlet-container .portlet-heading a {
+    color: #fff;
+}
+
+.portlet-container .portlet-heading a:hover,
+.portlet-container .portlet-heading a:active,
+.portlet-container .portlet-heading a:focus {
+    outline: none;
+}
+
+.portlet-container .portlet-widgets .dropdown-menu a {
+    color: #333;
+}
+
+.portlet-container .portlet-widgets ul.dropdown-menu {
+    min-width: 0;
+}
+
+.portlet-container .portlet-heading .portlet-title {
+    float: left;
+}
+
+.portlet-container .portlet-heading .portlet-title h4 {
+    margin: 10px 0;
+}
+
+.portlet-container .portlet-heading .portlet-widgets {
+    float: right;
+    margin: 8px 0;
+}
+
+.portlet-container .portlet-heading .portlet-widgets .tabbed-portlets {
+    display: inline;
+}
+
+.portlet-container .portlet-heading .portlet-widgets .divider {
+    margin: 0 5px;
+}
+
+.portlet-container .portlet-body {
+    padding: 15px;
+    background: #fff;
+}
+
+.portlet-container .portlet-footer {
+    padding: 10px 15px;
+    background: #e0e7e8;
+}
+
+.portlet-container .portlet-footer ul {
+    margin: 0;
+}
+
+.portlet-green,
+.portlet-green>.portlet-heading {
+    border-color: $alk-green;
+}
+
+.portlet-green>.portlet-heading {
+    color: #fff;
+    background-color: $alk-green;
+}
+
+.portlet-orange,
+.portlet-orange>.portlet-heading {
+    border-color: $alk-orange;
+}
+
+.portlet-orange>.portlet-heading {
+    color: #fff;
+    background-color: $alk-orange;
+}
+
+.portlet-blue,
+.portlet-blue>.portlet-heading {
+    border-color: $alk-blue;
+}
+
+.portlet-blue>.portlet-heading {
+    color: #fff;
+    background-color: $alk-blue;
+}
+
+.portlet-red,
+.portlet-red>.portlet-heading {
+    border-color: $alk-red;
+}
+
+.portlet-red>.portlet-heading {
+    color: #fff;
+    background-color: $alk-red;
+}
+
+.portlet-purple,
+.portlet-purple>.portlet-heading {
+    border-color: $alk-purple;
+}
+
+.portlet-purple>.portlet-heading {
+    color: #fff;
+    background-color: $alk-purple;
+}
+
+.portlet-yellow,
+.portlet-yellow>.portlet-heading {
+    border-color: $alk-yellow;
+}
+
+.portlet-yellow>.portlet-heading {
+    background-color: $alk-yellow;
+}
+
+.portlet-black,
+.portlet-black>.portlet-heading {
+    border-color: black;
+}
+
+.portlet-black>.portlet-heading {
+    background-color: black;
+    color: white;
+}
+
+.portlet-black,
+.portlet-black>.portlet-heading {
+    border-color: black;
+}
+
+.portlet-black>.portlet-heading {
+    background-color: white;
+    color: black;
+}
+
+@media(min-width:768px) {
+    .portlet-container {
+        margin-bottom: 30px;
+    }
+}

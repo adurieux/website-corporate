@@ -48,10 +48,10 @@
 
 
 
-h2 {
+#corporate h2 {
     text-transform: uppercase;
 }
-h3 {
+#corporate h3 {
     text-transform: uppercase;
     font-weight: bold;
     color: black;
@@ -112,19 +112,14 @@ h3 {
     background: linear-gradient(left, $light, $dark 20%, $dark 80%, $light );
 }
 
-$alk-orange-lighter: rgba(245,182,38,1);
-$alk-orange-darker: rgba(239,142,28,1);
 .advertising {
     @include jumbotron-gradient($alk-orange-darker, $alk-orange-lighter);
 }
 
-$alk-green-lighter: rgba(127,201,49,1);
 .stream {
     @include jumbotron-gradient($alk-green, $alk-green-lighter);
 }
 
-$alk-yellow-lighter: rgba(246,220,0,1);
-$alk-yellow-darker: rgba(241,201,0,1);
 .api {
     @include jumbotron-gradient($alk-yellow-darker, $alk-yellow-lighter);
 }
