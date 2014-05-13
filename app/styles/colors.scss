@@ -109,6 +109,9 @@ $alk-yellow-darker: rgba(241,201,0,1);
     background-color: white;
     color: $alk-purple;
 }
+.color-analytics-transparent {
+    color: $alk-purple;
+}
 .color-analytics-inverse {
     background-color: $alk-purple;
     color: white;
@@ -116,6 +119,9 @@ $alk-yellow-darker: rgba(241,201,0,1);
 
 .color-advertising {
     background-color: white;
+    color: $alk-orange;
+}
+.color-advertising-transparent {
     color: $alk-orange;
 }
 .color-advertising-inverse {
@@ -131,6 +137,9 @@ $alk-yellow-darker: rgba(241,201,0,1);
     background-color: white;
     color: $alk-green;
 }
+.color-stream-transparent {
+    color: $alk-green;
+}
 .color-stream-inverse {
     background-color: $alk-green;
     color: white;
@@ -138,6 +147,9 @@ $alk-yellow-darker: rgba(241,201,0,1);
 
 .color-api {
     background-color: white;
+    color: $alk-yellow;
+}
+.color-api-transparent {
     color: $alk-yellow;
 }
 .color-api-inverse{
