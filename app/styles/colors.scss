@@ -168,6 +168,10 @@ $alk-yellow-darker: rgba(241,201,0,1);
 //                                          SEMANTIC COLORS
 // =================================================================================================
 
+.color-plugin {
+    background-color: $alk-yellow;
+    color:white;
+}
 .color-brand {
     background-color: $alk-blue;
     color:white;
@@ -176,10 +180,12 @@ $alk-yellow-darker: rgba(241,201,0,1);
     background-color: $alk-blue;
     color:white;
 }
+.color-placement,
 .color-action {
     background-color: $alk-orange;
     color:white;
 }
+.color-organization,
 .color-member {
     background-color: $alk-red;
     color:white;
@@ -205,8 +211,7 @@ $alk-yellow-darker: rgba(241,201,0,1);
     color:white;
 }
 .color-shop,
-.color-store,
-.color-stream {
+.color-store {
     background-color: $brand-stream;
     color:white;
 }
@@ -217,10 +222,12 @@ $alk-yellow-darker: rgba(241,201,0,1);
 .color-product-inversed {
     color: $alk-blue;
 }
+.color-placement-inversed,
 .color-action-inversed {
     color: $brand-success;
     background-color:white;
 }
+.color-organization-inversed,
 .color-member-inversed {
     color: $alk-red;
 }

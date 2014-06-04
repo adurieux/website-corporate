@@ -127,7 +127,7 @@ module.exports = function (grunt) {
     // Add vendor prefixed styles
     autoprefixer: {
       options: {
-        browsers: ['last 1 version']
+        browsers: ['> 1%', 'last 2 versions', 'ie 8', 'ie 9']
       },
       dist: {
         files: [{
@@ -391,7 +391,7 @@ module.exports = function (grunt) {
                         dest: 'styles',
                         params: {
                             ContentType: 'text/css; chartset=utf-8;',
-                            ContentEncoding: 'gzip'                            
+                            ContentEncoding: 'gzip'
                         }
                     },
                     {
@@ -401,7 +401,7 @@ module.exports = function (grunt) {
                         dest: 'views',
                         params: {
                             ContentType: 'text/html; chartset=utf-8;',
-                            ContentEncoding: 'gzip'                                             
+                            ContentEncoding: 'gzip'
                         }
                     },
                     {
@@ -411,7 +411,7 @@ module.exports = function (grunt) {
                         dest: '',
                         params: {
                             ContentType: 'text/html; chartset=utf-8;',
-                            ContentEncoding: 'gzip'                                             
+                            ContentEncoding: 'gzip'
                         }
                     }
                 ],
@@ -444,6 +444,11 @@ module.exports = function (grunt) {
     // concat: {
     //   dist: {}
     // },
+    uglify: {
+      options: {
+        mangle: false
+      }
+    },
 
     // Test settings
     karma: {
@@ -497,7 +502,8 @@ module.exports = function (grunt) {
     'uglify',
     'rev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'compress',
   ]);
 
   grunt.registerTask('default', [

@@ -1,8 +1,9 @@
 'use strict';
 
 angular.module('websiteCorporateApp', [
-  'ngCookies',
-  'ngRoute'
+    'ngCookies',
+    'ngRoute',
+    'ui.bootstrap',
 ]);
 
 

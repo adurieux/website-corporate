@@ -21,22 +21,10 @@
             <p>
                 Big Data, Ad-Exchanges, personnalisation : il est temps de passer à une solution construite à partir de vos besoins.
             </p>
-            <p class="more">
-                <a  href="mailto:contact@alkemics.com" role="button">
-                    <i class="fa fa-plus-circle"></i> Go !
+            <div class="more">
+                <a ng-click="subscribe()" href="/#/" role="button">
+                    <i class="fa fa-plus-circle"></i> En savoir plus
                 </a>
-            </p>
-            
-            <div ng-show="!isRegisteredInMailingList">
-                <form ng-submit="registerMailingList()">
-                Je reste informé en m'inscrivant à la mailinglist : 
-                    <input ng-model="mailingListRecord.email" name="email" placeholder="monemail@me.com" type="email" />
-                    <input type="text" name="origin" ng-model="mailingListRecord.origin" hidden />
-                    <input type="submit" value="S'inscrire" />
-                </form>                                    
-            </div>
-            <div ng-show="isRegisteredInMailingList">
-                Merci pour votre inscription !
             </div>
         </div>
     </div>
@@ -59,7 +47,7 @@
                         <br/><br/>
                         Un simple clic, et le produit est mis au panier.
                     </p>
-                    <p><a href="#" role="button"><i class="fa fa-plus-circle"></i></a></p>
+                    <p><a ng-click="subscribe()" href="/#/" role="button"><i class="fa fa-plus-circle"></i></a></p>
                 </div>
             </div>
             <!--
@@ -76,7 +64,7 @@
                         <br/><br/>
                         Un simple clic, le produit est en panier et la réduction décomptée!
                     </p>
-                    <p><a href="#" role="button"><i class="fa fa-plus-circle"></i></a></p>
+                    <p><a ng-click="subscribe()" href="/#/" role="button"><i class="fa fa-plus-circle"></i></a></p>
                 </div>
             </div>
             -->
@@ -91,7 +79,7 @@
                         <br/><br/>
                         Permettez à vos internautes de commander directement les ingrédients nécessaires à la réalisation d’une recette.
                     </p>
-                    <p><a href="#" role="button"><i class="fa fa-plus-circle"></i></a></p>
+                    <p><a ng-click="subscribe()" href="/#/" role="button"><i class="fa fa-plus-circle"></i></a></p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -105,7 +93,7 @@
                         <br/><br/>
                         Chaque internaute peut ajouter vos produits directement depuis vos bannières, en un clic, dans son magasin habituel.
                     </p>
-                    <p><a href="#" role="button"><i class="fa fa-plus-circle"></i></a></p>
+                    <p><a ng-click="subscribe()" href="/#/" role="button"><i class="fa fa-plus-circle"></i></a></p>
                 </div>
             </div>
         </div>
@@ -132,7 +120,7 @@
                         <br/> </br>
                         Diffusez-les directement au sein de notre réseau d'enseignes partenaires.
                     </p>
-                    <p><a href="#" role="button"><i class="fa fa-plus-circle"></i></a></p>
+                    <p><a ng-click="subscribe()" href="/#/" role="button"><i class="fa fa-plus-circle"></i></a></p>
                 </div>
             </div>
         </div>
@@ -157,7 +145,7 @@
                         <br/><br/>
                         Intégrable directement dans le front, le moteur embarque merchandising, personnalisation, auto-complétion...
                     </p>
-                    <p><a href="#" role="button"><i class="fa fa-plus-circle"></i></a></p>
+                    <p><a ng-click="subscribe()" href="/#/" role="button"><i class="fa fa-plus-circle"></i></a></p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -171,7 +159,7 @@
                         <br/><br/>
                         Notre système de substitution propose un produit de remplacement de marque, packaging, contenance et qualité similaires.
                     </p>
-                    <p><a href="#" role="button"><i class="fa fa-plus-circle"></i></a></p>
+                    <p><a ng-click="subscribe()" href="/#/" role="button"><i class="fa fa-plus-circle"></i></a></p>
                 </div>
             </div>
             <!--
@@ -186,7 +174,7 @@
                         <br/><br/>
                         Laissez libre cours à votre imagination pour intégrer cette fonctionalité au sein de vos objets connectés.
                     </p>
-                    <p><a href="#" role="button"><i class="fa fa-plus-circle"></i></a></p>
+                    <p><a ng-click="subscribe()" href="/#/" role="button"><i class="fa fa-plus-circle"></i></a></p>
                 </div>
             </div>
         -->
@@ -201,7 +189,7 @@
                         <br/><br/>
                         Moins de publicité, davantage de coupons utiles, c'est un client plus satisfait.
                     </p>
-                    <p><a href="#" role="button"><i class="fa fa-plus-circle"></i></a></p>
+                    <p><a ng-click="subscribe()" href="/#/" role="button"><i class="fa fa-plus-circle"></i></a></p>
                 </div>
             </div>
         </div>
