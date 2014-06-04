@@ -26,6 +26,18 @@
                     <i class="fa fa-plus-circle"></i> Go !
                 </a>
             </p>
+            
+            <div ng-show="!isRegisteredInMailingList">
+                <form ng-submit="registerMailingList()">
+                Je reste informé en m'inscrivant à la mailinglist : 
+                    <input ng-model="mailingListRecord.email" name="email" placeholder="monemail@me.com" type="email" />
+                    <input type="text" name="origin" ng-model="mailingListRecord.origin" hidden />
+                    <input type="submit" value="S'inscrire" />
+                </form>                                    
+            </div>
+            <div ng-show="isRegisteredInMailingList">
+                Merci pour votre inscription !
+            </div>
         </div>
     </div>
 </div>
@@ -195,3 +207,6 @@
         </div>
     </div>
 </div>
+
+
+
