@@ -37,7 +37,9 @@ var MailingListModalController = function ($scope, $modalInstance, $http) {
 };
 
 
-angular.module('websiteCorporateApp').controller('MainCtrl', function ($scope, $http, $modal, $location) {
+angular.module('websiteCorporateApp').controller('MainCtrl', [
+    '$scope', '$http', '$modal', '$location',
+    function ($scope, $http, $modal, $location) {
 
     var subscribe = function(){
         var modalInstance = $modal.open({
@@ -57,4 +59,4 @@ angular.module('websiteCorporateApp').controller('MainCtrl', function ($scope, $
         });
     };
     $scope.subscribe = subscribe;
-});
+}]);
