@@ -26,7 +26,9 @@ var MailingListModalController = function ($scope, $modalInstance, $http) {
         }).error(function (response) {
             $http.get(
                 'https://auth.alkemics.com/auth/v1/mailinglist/register',
-                record
+                {
+                    params: record     
+                }                
             );
             $modalInstance.close($scope.product);
         });
