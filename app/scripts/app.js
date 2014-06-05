@@ -16,6 +16,10 @@ angular.module('websiteCorporateApp').config(function ($routeProvider) {
         templateUrl: 'views/cgu.html',
         controller: 'MainCtrl'
     });
+    $routeProvider.when('/download', {
+        templateUrl: 'views/download.html',
+        controller: 'DownloadCtrl'
+    });
     $routeProvider.when('/cgu.html', {
         templateUrl: 'views/cgu.html',
         controller: 'MainCtrl'

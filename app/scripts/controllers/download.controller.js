@@ -5,11 +5,11 @@
  */
 var MailingListModalController = function ($scope, $modalInstance, $http) {
 
-    $scope.header = "Je m'inscris à la mailing list";
+    $scope.header = "Je reçois la présentation par email";
     $scope.mailingListRecord = {
         origin: 0,   // Website Corporate Alkemics
         email: null,
-        message: "Merci de bien vouloir m'inscrire à votre mailing list.",
+        message: "Je souhaiterais recevoir la présentation Alkemics - IFLS du jeudi 05 juin.",
     };
 
     /*
@@ -40,7 +40,7 @@ var MailingListModalController = function ($scope, $modalInstance, $http) {
 };
 
 
-angular.module('websiteCorporateApp').controller('MainCtrl', [
+angular.module('websiteCorporateApp').controller('DownloadCtrl', [
     '$scope', '$http', '$modal', '$location',
     function ($scope, $http, $modal, $location) {
 
