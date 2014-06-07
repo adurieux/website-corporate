@@ -3,13 +3,13 @@
 /**
  * Modal that allows the user to register on the mailing list
  */
-var MailingListModalController = function ($scope, $modalInstance, $http) {
+var DownloadModalController = function ($scope, $modalInstance, $http, $location) {
 
     $scope.header = "Je reçois la présentation par email";
     $scope.mailingListRecord = {
-        origin: 0,   // Website Corporate Alkemics
+        origin: 1,   // Download
         email: null,
-        message: "Je souhaiterais recevoir la présentation Alkemics - IFLS du jeudi 05 juin.",
+        message: "Je souhaiterais recevoir la présentation Alkemics - IFLS du jeudi 05 juin."
     };
 
     /*
@@ -47,7 +47,7 @@ angular.module('websiteCorporateApp').controller('DownloadCtrl', [
     var subscribe = function(){
         var modalInstance = $modal.open({
             templateUrl: '/views/mailinglist.html',
-            controller: MailingListModalController,
+            controller: DownloadModalController,
             resolve: {
                 $http: function () {
                     return $http;
