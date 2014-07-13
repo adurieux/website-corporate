@@ -1,10 +1,10 @@
-$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/";
 $iconSpritePath: "../images/glyphicons-halflings.png";
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
 @import "colors.scss";
 @import "_variables.scss";
-@import "sass-bootstrap/lib/bootstrap";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
 @import "navbar.scss";
 @import "home.scss";
 @import "stream.scss";
