@@ -1,0 +1,207 @@
+<div class="container text-center brand">
+    <div class="logo">
+        <img src="/images/logo.png" width="400px"/>
+    </div>
+    <p class="motto">
+        La plateforme pour piloter votre marketing produit
+    </p>
+</div>
+
+<div class="container-fluid" id="preview">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="screen-container">
+                <div class="screen-border">
+                    <div class="screen-space screen-stream" ng-if="slides.stream.active"></div>
+
+                    <!--<div class="screen-space screen-link" ng-if="slides.link.active"></div>-->
+                    <!--<div class="screen-space screen-coupon" ng-if="slides.coupon.active"></div>-->
+                    <div class="screen-space screen-shoppinglist" ng-if="slides.shoppinglist.active"></div>
+                    <!--<div class="screen-space screen-inbanner" ng-if="slides.inbanner.active"></div>-->
+
+                    <!--<div class="screen-space screen-search" ng-if="slides.search.active"></div>-->
+                    <div class="screen-space screen-substitution" ng-if="slides.substitution.active"></div>
+                    <!--<div class="screen-space screen-recommandation" ng-if="slides.recommandation.active"></div>-->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div carousel id="carousel-main" interval="interval">
+                <div slide active="slides.stream.active">
+                    <h1 class="color-stream">
+                        <div class="title">
+                        Product Stream
+                        </div>
+                        <small>
+                            Reprenez la main sur vos fiches produit
+                        </small>
+                    </h1>
+                    <br/> <br/>
+                    <div>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-check"></i>Données INCO 1169</li>
+                            <li><i class="fa-li fa fa-check"></i>Sites marchands, étiquettes électroniques, prospectus</li>
+                            <li><i class="fa-li fa fa-check"></i>Photos, vidéos, contenu enrichi</li>
+                            <li><i class="fa-li fa fa-check"></i>Chainage produit pour éviter les ruptures</li>
+                            <li><i class="fa-li fa fa-check"></i>Optimisation du moteur de recherche</li>
+                        </ul>
+                        <br/><br/>
+                        <div class="text-center">
+                            <a class="btn color-stream-inverse btn-xl" href="https://stream.alkemics.com/#/">
+                                <i class="fa fa-arrow-right"></i>
+                                En savoir plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div slide active="slides.link.active">
+                    <div ng-include="'src/service/detail/link-preview.html'"></div>
+                </div>-->
+                <!--<div slide active="slides.coupon.active">
+                    <div ng-include="'src/service/detail/coupon-preview.html'"></div>
+                </div>-->
+                <div slide active="slides.shoppinglist.active">
+                    <div ng-include="'src/service/detail/shoppinglist-preview.html'"></div>
+                </div>
+                <!--<div slide active="slides.inbanner.active">
+                    <div ng-include="'src/service/detail/inbanner-preview.html'"></div>
+                </div>-->
+
+                <!--<div slide active="slides.search.active">
+                    <div ng-include="'src/service/detail/substitution-preview.html'"></div>
+                </div>-->
+                <div slide active="slides.substitution.active">
+                    <div ng-include="'src/service/detail/substitution-preview.html'"></div>
+                </div>
+                <!--<div slide active="slides.recommandation.active">
+                    <div ng-include="'src/service/detail/substitution-preview.html'"></div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="features">
+    <div ng-show="slides.stream.active">
+        <div class="container feature">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="screen-small screen-small-stream-dashboard text-left">
+                        <div class="screen-manifying text-right screen-manifying-stream-nutrition">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 text-justify">
+                    <h2 class="color-stream-transparent">Faire mieux que la 1169</h2>
+                    <p>
+                        En format plein texte, les données INCO sont inexploitables par les moteurs de recherche. Notre solution les redresse en des <strong>attributs normalisés</strong> permettant aux disitributeurs de pouvoir créer des facettes dans leurs moteurs de recherche, des catégories spéciales dans leurs assortiments, etc.
+                    </p>
+                    <p>
+                        Là où la GDSN ne permet que la redescente d'un nombre d'attributs restreint, nous vous permettons de mettre à disposition des distributeurs une vaste bibliothèque d'attributs, de labels et de pictogrammes. Au-delà de l'information régèlementaire, vous pouvez désormais <strong>communiquer sur les valeurs de votre produit</strong> : recyclage, récompenses, marques de qualité...
+                    </p>
+                    <p>
+                        Vous n'avez pas centralisé vos informations produit en interne ? Pas d'inquiétude, notre plate-forme est <strong>pré-remplie des informations collectées chez nos distributeurs partenaires</strong>. Vous n'avez plus qu'à les compléter ou les amender.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container feature">
+            <div class="row">
+                <div class="col-lg-8 text-justify">
+                    <h2 class="color-stream-transparent text-right">Votre joker pour le merchandising</h2>
+                    <p>
+                        À l'heure où la vente en ligne commence à représenter une partie importante de votre chiffre d'affaires, il est crucial d'occuper une place de choix au sein des "rayons" numériques. Pour que tous vos clients puissent trouver leur produit préféré, définissez les <strong>synonymes</strong> courants de votre produit pour aider les distributeurs à améliorer la <strong>pertinence de leur moteur de recherche</strong>.
+                    </p>
+                    <p>
+                        La multiplication des formats promotionnels et la forte variabilité des stocks en magasin ne doit pas impacter vos ventes : définissez vous-mêmes les <strong>chaînages produits</strong> pour assurer la continuité de la disponibilité de vos produits. Ainsi, vos utilisateurs pourront se voir proposer des <strong>alternatives au sein de leurs listes de courses pré-enregistrées ou de leurs produits favoris</strong>.
+                    </p>
+                    <p>
+                        Vos produits vivent en écosystème : proposez des <strong>produits complémentaires</strong>, des produits similaires afin de faire découvrir à vos utilisateurs fidèles vos autres produits.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="screen-small screen-small-stream-dashboard text-right">
+                        <div class="screen-manifying screen-manifying-stream-promotion text-left">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container feature">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="screen-small screen-small-stream-dashboard text-left">
+                        <div class="screen-manifying screen-manifying-stream-brand text-right">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 text-justify">
+                    <h2 class="color-stream-transparent">Un contenu à la mesure de vos produits</h2>
+                    <p>
+                        Afin d'engager un autre dialogue avec vos clients, mettez à disposition de vos distributeurs du contenu complémentaire : <strong>vidéos, photos HD, vues 3D, recettes, conseils d'utilisation</strong>.
+                    </p>
+                    <p>
+                        Communiquez sur les <strong>valeurs de votre marque</strong> en mettant à disposition son logo, du contenu sur son histoire, ses spécificités.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container feature">
+            <div class="row">
+                <div class="col-lg-8 text-justify">
+                    <h2 class="color-stream-transparent text-right">Une plateforme ouverte et flexible</h2>
+                    <p>
+                        Notre plateforme est <strong>nativement connectée</strong> à plusieurs distributeurs : Cora Belgique, AuchanDrive, AuchanDirect, Auchan.fr, Auchan Mieux Vivre, Chronodrive, Match Belgique. En un clic, vos modifications sont propagées dans leurs catalogues.
+                    </p>
+                    <p>
+                        Pour les autres, <strong>exportez</strong> vos fiches produits aux formats qu'ils exigent en un simple clic : le remplissage fastidieux de fichiers Excel, c'est fini !
+                    </p>
+                    <p>
+                        Notre plateforme fournit nativement un <strong>WebService REST</strong> permettant de requêter l'ensemble de vos données. Ainsi, elles peuvent être directement accédées depuis vos sites et applications, ou explorées programmatiquement. Et si vous voulez ouvrir vos données en <strong>open-data</strong> ? C'est à la portée d'un simple clic !
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="screen-small screen-small-stream-dashboard text-right">
+                        <div class="screen-manifying screen-manifying-stream-label text-left">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="text-center">
+                <a class="btn color-stream-inverse btn-xl" href="https://stream.alkemics.com/#/">
+                    <i class="fa fa-arrow-right"></i>
+                    En savoir plus
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div ng-show="slides.link.active">
+        <div ng-include="'src/service/detail/link-arguments.html'"></div>
+    </div>
+    <div ng-show="slides.inbanner.active">
+        <div ng-include="'src/service/detail/link-arguments.html'"></div>
+    </div>
+    <div ng-show="slides.coupon.active">
+        <div ng-include="'src/service/detail/link-arguments.html'"></div>
+    </div>
+    <div ng-show="slides.shoppinglist.active">
+        <div ng-include="'src/service/detail/link-arguments.html'"></div>
+        <!--<div ng-include="'src/service/detail/shoppinglist-arguments.html'"></div>-->
+    </div>
+
+    <div ng-show="slides.search.active">
+        <div ng-include="'src/service/detail/substitution-arguments.html'"></div>
+    </div>
+    <div ng-show="slides.substitution.active">
+        <div ng-include="'src/service/detail/substitution-arguments.html'"></div>
+    </div>
+    <div ng-show="slides.recommandation.active">
+        <div ng-include="'src/service/detail/substitution-arguments.html'"></div>
+    </div>
+</div>
+
+
