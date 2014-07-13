@@ -4,7 +4,7 @@ angular.module('websiteCorporateApp').controller('MainCtrl', [
     '$scope', '$http', '$modal', '$routeParams',
     function ($scope, $http, $modal, $routeParams) {
 
-    $scope.interval = 5000;
+    $scope.interval = 10000;
     $scope.slides = {
         stream: {active: false},
 
@@ -44,7 +44,7 @@ angular.module('websiteCorporateApp').controller('MainCtrl', [
             for (var name in $scope.slides) {
                 if (name === service) {
                     $scope.slides[name].active = true;
-                    $scope.interval = 99999;
+                    $scope.interval = 9999999;
                     return;
                 }
             }
