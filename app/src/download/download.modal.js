@@ -1,15 +1,15 @@
 /**
  * Modal that allows the user to register on the mailing list
  */
-angular.module('websiteCorporateApp').controller('MailingListModalCtrl', [
+angular.module('websiteCorporateApp').controller('DownloadModalCtrl', [
     '$scope', '$http', '$modalInstance',
     function ($scope, $http, $modalInstance) {
 
-    $scope.header = "Contact";
+    $scope.header = "Je reçois la présentation par email";
     $scope.mailingListRecord = {
-        origin: 0,   // Website Corporate Alkemics
+        origin: 1,   // Download
         email: null,
-        message: "Merci de bien vouloir m'inscrire à votre mailing list.",
+        message: "Je souhaiterais recevoir la présentation Alkemics - IFLS du jeudi 05 juin."
     };
 
     /*

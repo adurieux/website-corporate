@@ -55,3 +55,50 @@
 .tab-content {
     padding-top: 20px;
 }
+
+.input-group .input-group-btn select.form-control {
+    border-bottom-left-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-bottom-left-radius: 0px;
+    border-right-left-radius: 0px;
+    -webkit-border-right-left-radius: 0px;
+    -moz-border-right-left-radius: 0px;
+}
+
+.productnutritionalquantity-precision {
+    width: 50px;
+}
+
+.table {
+    border-collapse: separate;
+}
+.table .separator {
+    border-collapse: collapse;
+    border-top-width: 1px;
+}
+.table > tbody {
+    margin-bottom: 20px;
+}
+.table > tbody > tr > td{
+    border-top: 0px;
+}
+.table > tbody > tr {
+    border-top: 0px;
+    border-bottom: 0px;
+    border-spacing: 0px;
+}
+.pnq-name {
+    text-align: right;
+}
+.separator {
+     margin-right: 30px;
+}
+.table tbody tr td.psq-line {
+    background-color: #eeeeee;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+.table thead tr th.psq-col,
+.table tbody tr td.psq-col {
+    border-left: 1px solid #dddddd;
+}

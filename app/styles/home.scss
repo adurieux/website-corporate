@@ -100,16 +100,17 @@
 
 
 @mixin jumbotron-gradient($dark, $light) {
-    background: $dark;
+    background-color: $dark;
     -o-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
-    background: -webkit-gradient(linear, left top, right top, from($light), to($light), color-stop(0.2, $dark), color-stop(0.8, $dark) );
-    background: -webkit-linear-gradient(left, $light, $dark 20%, $dark 80%, $light );
-    background: -moz-linear-gradient(left, $light, $dark 20%, $dark 80%, $light );
-    background: -o-linear-gradient(left, $light, $dark 20%, $dark 80%, $light );
-    background: linear-gradient(left, $light, $dark 20%, $dark 80%, $light );
+    background-image: -webkit-gradient(linear, left top, right top, from($light), to($light), color-stop(0.2, $dark), color-stop(0.8, $dark));
+    background-image:  -webkit-linear-gradient(left, $light, $dark 20%, $dark 80%, $light);
+    background-image:     -moz-linear-gradient(left, $light, $dark 20%, $dark 80%, $light);
+    background-image:      -ms-linear-gradient(left, $light, $dark 20%, $dark 80%, $light);
+    background-image:       -o-linear-gradient(left, $light, $dark 20%, $dark 80%, $light);
+    background-image:          linear-gradient(left, $light, $dark 20%, $dark 80%, $light);
 }
 
 .advertising {
@@ -122,4 +123,139 @@
 
 .api {
     @include jumbotron-gradient($alk-yellow-darker, $alk-yellow-lighter);
+}
+
+
+
+.screen-container {
+    height: 600px;
+    background-image:url(/images/home/screen.png);
+    background-repeat: no-repeat;
+    background-position:top right;
+    margin-left: -15px;
+}
+.screen-border {
+    padding-top: 75px;
+    padding-right: 75px;
+    height: 600px;
+}
+.screen-stream {
+    background-image:url(/images/home/screenshot-stream.png);
+}
+.screen-shoppinglist {
+    background-image:url(/images/home/services/shoppinglist/website.png);
+}
+.screen-substitution {
+    background-image:url(/images/home/services/substitution/screen.png);
+}
+.screen-space {
+    background-repeat: no-repeat;
+    background-position:top right;
+    background-color: black;
+    border-right:1px solid gray;
+    border-top:1px solid gray;
+    height: 525px;
+}
+
+.screen-small {
+    background-repeat: no-repeat;
+    background-size: 250px;
+    height: 250px;
+}
+.screen-small-stream-dashboard {
+    background-image:url(/images/home/services/stream/screen.png);
+}
+.screen-small-webservice-retailer {
+    background-image:url(/images/home/services/substitution/website.png);
+}
+.screen-small-advertising-dashboard {
+    background-image:url(/images/home/services/shoppinglist/dashboard-computer.png);
+}
+.screen-small-application-retailer {
+    background-size: auto 250px;
+    background-image:url(/images/home/services/scan/application.png);
+}
+.screen-small.text-left {
+    background-position:center left;
+}
+.screen-small.text-right {
+    background-position:center right;
+}
+
+
+
+.screen-manifying {
+    background-repeat: no-repeat;
+    height: 250px;
+    background-size: 250px;
+}
+.screen-manifying.text-right {
+    background-position:center right;
+}
+.screen-manifying.text-left {
+    background-position:center left;
+}
+
+.screen-manifying-stream-nutrition {
+    background-image:url(/images/home/services/stream/nutrition-magnified.png);
+}
+.screen-manifying-stream-label {
+    background-image:url(/images/home/services/stream/label-magnified.png);
+}
+.screen-manifying-stream-brand {
+    background-image:url(/images/home/services/stream/brand-magnified.png);
+}
+.screen-manifying-stream-promotion {
+    background-image:url(/images/home/services/stream/promotion-magnified.png);
+}
+
+.screen-manifying-advertising-shoppinglist-dashboard {
+    background-image:url(/images/home/services/shoppinglist/dashboard-magnified.png);
+}
+
+.screen-manifying-webservice-substitution {
+    background-image:url(/images/home/services/substitution/website-magnified.png);
+}
+.screen-manifying-webservice-scan {
+    background-image:url(/images/home/services/scan/application-magnified.png);
+}
+
+
+
+
+div.title {
+    font-size: 60px;
+}
+#preview {
+    font-size: 15px;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0px -10px 10px 0px rgba(0, 0, 0, 0.1) inset;
+}
+.btn-xl {
+    font-size: 20px;
+    padding: 10px 21px;
+    line-height: 1.5;
+}
+.feature {
+    margin-top: 50px;
+    min-height: 250px;
+}
+.carousel-indicators li {
+    border: 1px solid black;
+    background-color: black;
+}
+
+#corporate strong {
+    color: green;
+}
+
+.carousel {
+    height: 580px;
+}
+.carousel-control {
+    display: none;
+}
+.carousel-inner .item {
+    text-align: left;
+    height: 580px;
 }

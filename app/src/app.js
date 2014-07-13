@@ -8,6 +8,7 @@ angular.module('websiteCorporateApp', [
 
 
 angular.module('websiteCorporateApp').config(function ($routeProvider) {
+
     $routeProvider.when('/', {
         templateUrl: 'src/service/index.html',
         controller: 'MainCtrl'
@@ -16,10 +17,12 @@ angular.module('websiteCorporateApp').config(function ($routeProvider) {
         templateUrl: 'src/service/index.html',
         controller: 'MainCtrl'
     });
+
     $routeProvider.when('/technology', {
         templateUrl: 'src/technology/index.html',
         controller: 'TechnologyCtrl'
     });
+
     $routeProvider.when('/cgu', {
         templateUrl: 'src/cgu/index.html',
         controller: 'CguCtrl'
@@ -27,6 +30,11 @@ angular.module('websiteCorporateApp').config(function ($routeProvider) {
     $routeProvider.when('/cgu.html', {
         templateUrl: 'src/cgu/index.html',
         controller: 'CguCtrl'
+    });
+
+    $routeProvider.when('/download', {
+        templateUrl: 'src/download/index.html',
+        controller: 'DownloadCtrl'
     });
     $routeProvider.otherwise({
         redirectTo: '/'

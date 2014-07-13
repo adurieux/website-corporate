@@ -31,9 +31,10 @@ body {
     padding-bottom: 0px;
 }
 
-#corporate h1 {
-    color: $alk-orange;
-}
 #stream h1 {
     color: $alk-green;
+}
+
+.form-horizontal .control-label.text-left {
+	text-align: left;
 }

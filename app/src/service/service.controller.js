@@ -21,12 +21,7 @@ angular.module('websiteCorporateApp').controller('MainCtrl', [
     var subscribe = function(){
         var modalInstance = $modal.open({
             templateUrl: '/src/mailinglist/modal.html',
-            controller: MailingListModalController,
-            resolve: {
-                $http: function () {
-                    return $http;
-                }
-            }
+            controller: 'MailingListModalCtrl'
         });
 
         modalInstance.result.then(function (selectedItem) {
