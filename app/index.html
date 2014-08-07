@@ -72,13 +72,13 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-controller="HeaderCtrl">
         <div class="container">
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="/#/">Accueil</a></li>
                     <!--<li><a href="/#/company/customers">Clients</a></li>-->
-                    <li><a href="mailto:contact@alkemics.com">Contact</a></li>
+                    <li href="/#/" ng-click="subscribe('Je voudrais avoir des détails au sujet de ...')"><a>Contact</a></li>
                     <li><a target="_blank" href="https://twitter.com/alkemics"><i class="fa fa-twitter"></i></a></li>
                     <li><a target="_blank" href="https://www.linkedin.com/company/j-r-me"><i class="fa fa-linkedin"></i></a></li>
                     <!--<li><a target="_blank" href="https://www.facebook.com/Alkemics"><i class="fa fa-facebook"></i></a></li>-->
@@ -87,17 +87,19 @@
         </div>
     </div>
 
-    <div ng-view=""></div>
+    <div ng-view="">
 
-    <footer class="navbar-inverse">
+    </div>
+
+    <footer class="navbar-inverse" ng-controller="HeaderCtrl">
         <div class="container">
             <div class="col-md-1"></div>
             <div class="col-md-2">
                 <h2 class="color-company">À propos</h2>
                 <ul>
-                    <!--<li><a href="/#/company/customers">Clients</a></li>
-                    <li><a href="/#/company/team">Équipe</a></li>-->
-                    <!--<li><a href="/#/technology">Avantage compétitif</a></li>-->
+                    <!--<li><a href="/#/company/customers">Clients</a></li>-->
+                    <!--<li><a href="/#/company/team">Équipe</a></li>-->
+                    <!--<li><a href="/#/about/technology">Avantage compétitif</a></li>-->
                     <li><a href="http://www.alkemics.com/resources/corporate/hiring/postings/jobs.pdf">Carrières</a></li>
                     <li><a href="/#/cgu">Termes &amp; conditions</a></li>
                 </ul>
@@ -120,10 +122,10 @@
             <div class="col-md-2">
                 <h2 class="color-api-transparent">Web Services</h2>
                 <ul>
+                    <li><a href="/#/service/webservices/scan">Barcode scan</a></li>
                     <li><a href="/#/service/webservices/search">Search</a></li>
                     <li><a href="/#/service/webservices/substitution">Substitution</a></li>
-                    <!--<li><a href="/#/service/webservices/barcodescan">Barcode scan</a></li>-->
-                    <li><a href="/#/service/webservices/recommandation">Recommandation</a></li>
+                    <!--<li><a href="/#/service/webservices/recommandation">Recommandation</a></li>-->
                 </ul>
             </div>
             <div class="col-md-2">
@@ -132,7 +134,7 @@
                     <a target="_blank" href="https://twitter.com/alkemics"><i class="fa fa-twitter"></i></a> &nbsp; &nbsp;
                     <a target="_blank" href="https://www.linkedin.com/company/j-r-me"><i class="fa fa-linkedin"></i></a> &nbsp; &nbsp;
                     <!--<a target="_blank" href="https://www.facebook.com/Alkemics"><i class="fa fa-facebook"></i></a> &nbsp; &nbsp;-->
-                    <a href="mailto:contact@alkemics.com"><i class="fa fa-envelope"></i></a>
+                    <a ng-click="subscribe()"><i class="fa fa-envelope"></i></a>
                 </div>
             </div>
             <div class="col-md-1"></div>
@@ -181,10 +183,12 @@
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="src/app.js"></script>
+    <script src="src/home/home.controller.js"></script>
+    <script src="src/header/header.controller.js"></script>
     <script src="src/service/service.controller.js"></script>
-    <script src="src/mailinglist/mailinglist.controller.js"></script>
+    <script src="src/contact/contact.controller.js"></script>
     <script src="src/cgu/cgu.controller.js"></script>
-    <script src="src/technology/technology.controller.js"></script>
+    <script src="src/about/technology/technology.controller.js"></script>
     <script src="src/download/download.controller.js"></script>
     <script src="src/download/download.modal.js"></script>
     <!-- endbuild -->

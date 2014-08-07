@@ -4,22 +4,24 @@ angular.module('websiteCorporateApp', [
     'ngCookies',
     'ngRoute',
     'ui.bootstrap',
+    'sdk-dashboard',
 ]);
 
 
 angular.module('websiteCorporateApp').config(function ($routeProvider) {
 
     $routeProvider.when('/', {
-        templateUrl: 'src/service/index.html',
-        controller: 'MainCtrl'
-    });
-    $routeProvider.when('/service/:family/:service', {
-        templateUrl: 'src/service/index.html',
+        templateUrl: 'src/home/index.html',
         controller: 'MainCtrl'
     });
 
-    $routeProvider.when('/technology', {
-        templateUrl: 'src/technology/index.html',
+    $routeProvider.when('/service/:family/:service', {
+        templateUrl: 'src/service/index.html',
+        controller: 'ServiceCtrl'
+    });
+
+    $routeProvider.when('/about/technology', {
+        templateUrl: 'src/about/technology/technology.html',
         controller: 'TechnologyCtrl'
     });
 

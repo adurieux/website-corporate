@@ -126,7 +126,13 @@
 }
 
 
-
+.screen-full {
+    width: 100%;
+    text-align: right;
+}
+.noscreen-container {
+    margin-bottom: 15px;
+}
 .screen-container {
     height: 600px;
     background-image:url(/images/home/screen.png);
@@ -147,6 +153,9 @@
 }
 .screen-substitution {
     background-image:url(/images/home/services/substitution/screen.png);
+}
+.screen-scan {
+    background-image:url(/images/home/services/scan/hiku.png);
 }
 .screen-space {
     background-repeat: no-repeat;
@@ -183,6 +192,15 @@
 }
 
 
+.noscreen-small {
+    background-repeat: no-repeat;
+    height: 250px;
+    background-size: 100%;
+    background-position: 50% 50%;
+}
+.noscreen-small-stream-poweredby {
+    background-image:url(/images/home/services/stream/poweredby.png);
+}
 
 .screen-manifying {
     background-repeat: no-repeat;
@@ -258,4 +276,15 @@ div.title {
 .carousel-inner .item {
     text-align: left;
     height: 580px;
+}
+
+.message-band {
+    font-size: 120%;
+    text-align: center;
+    padding: 15px 30px;
+    cursor: pointer;
+    .alert-link {
+        text-decoration: underline;
+        color: inherit;
+    }
 }
