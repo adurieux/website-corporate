@@ -320,6 +320,119 @@ module.exports = function (grunt) {
         'htmlmin'
       ]
     },
+    compress: {
+            main: {
+                options: {
+                    mode: 'gzip'
+                },
+                files: [
+                    // Each of the files in the src/ folder will be output to
+                    // the dist/ folder each with the extension .gz.js
+                    {
+                        expand: true,
+                        cwd: '<%= yeoman.dist %>/scripts',
+                        src: ['*.scripts.js'],
+                        dest: '<%= yeoman.dist %>/compressed/scripts',
+                        ext: '.scripts.js'
+                    },
+                    {
+                        expand: true,
+                        cwd: '<%= yeoman.dist %>/scripts',
+                        src: ['*.vendor.js'],
+                        dest: '<%= yeoman.dist %>/compressed/scripts',
+                        ext: '.vendor.js'
+                    },
+                    {
+                        expand: true,
+                        cwd: '<%= yeoman.dist %>/styles',
+                        src: ['*.main.css'],
+                        dest: '<%= yeoman.dist %>/compressed/styles',
+                        ext: '.main.css'
+                    },
+                    {
+                        expand: true,
+                        cwd: '<%= yeoman.dist %>/views',
+                        src: ['*.html'],
+                        dest: '<%= yeoman.dist %>/compressed/views',
+                        ext: '.html'
+                    },
+                    {
+                        expand: true,
+                        cwd: '<%= yeoman.dist %>',
+                        src: ['*.html'],
+                        dest: '<%= yeoman.dist %>/compressed',
+                        ext: '.html'
+                    }
+                ]
+            }
+        },
+
+    aws: grunt.file.readJSON('grunt-aws.json'),
+        aws_s3: {
+            options: {
+              accessKeyId: '<%= aws.key %>',
+              secretAccessKey: '<%= aws.secret %>',
+              bucket: 'www.alkemics.com',
+              region: 'eu-west-1',
+              access: 'public-read'
+            },
+            prod: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= yeoman.dist %>/compressed/scripts',
+                        src: ['*'],
+                        dest: 'scripts',
+                        params: {
+                            ContentType: 'application/json; chartset=utf-8;',
+                            ContentEncoding: 'gzip'
+                        }
+                    },
+                    {
+                        expand: true,
+                        cwd: '<%= yeoman.dist %>/compressed/styles',
+                        src: ['*'],
+                        dest: 'styles',
+                        params: {
+                            ContentType: 'text/css; chartset=utf-8;',
+                            ContentEncoding: 'gzip'
+                        }
+                    },
+                    {
+                        expand: true,
+                        cwd: '<%= yeoman.dist %>/compressed/views',
+                        src: ['*'],
+                        dest: 'views',
+                        params: {
+                            ContentType: 'text/html; chartset=utf-8;',
+                            ContentEncoding: 'gzip'
+                        }
+                    },
+                    {
+                        expand: true,
+                        cwd: '<%= yeoman.dist %>/compressed/',
+                        src: ['*.html'],
+                        dest: '',
+                        params: {
+                            ContentType: 'text/html; chartset=utf-8;',
+                            ContentEncoding: 'gzip'
+                        }
+                    }
+                ],
+
+
+            },
+            preprod: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= yeoman.app %>',
+                        src: ['**'],
+                        dest: ''
+                    },
+                ]
+            }
+          },
 
     // By default, your `index.html`'s <!-- Usemin block --> will take care of
     // minification. These next options are pre-configured if you do not wish
@@ -353,27 +466,6 @@ module.exports = function (grunt) {
         configFile: 'karma.conf.js',
         singleRun: true
       }
-    },
-    aws: grunt.file.readJSON('grunt-aws.json'),
-    aws_s3: {
-        options: {
-          accessKeyId: '<%= aws.key %>',
-          secretAccessKey: '<%= aws.secret %>',
-          bucket: 'www.alkemics.com',
-          region: 'eu-west-1',
-          access: 'public-read'
-        },
-        prod: {
-              files: [
-                {expand: true, cwd: '<%= yeoman.dist %>/src', src: ['**'], dest: 'src'},
-                {expand: true, cwd: '<%= yeoman.app %>/views', src: ['**'], dest: 'views'},
-                {expand: true, cwd: '<%= yeoman.dist %>', src: ['*'], dest: ''},
-                {expand: true, cwd: '<%= yeoman.dist %>/scripts', src: ['**'], dest: 'scripts'},
-                {expand: true, cwd: '<%= yeoman.dist %>/styles', src: ['**'], dest: 'styles'},
-                {expand: true, cwd: '<%= yeoman.dist %>/images', src: ['**'], dest: 'images'}
-              ]
-
-        },
     },
     shell: {
         compress: {
@@ -420,7 +512,7 @@ module.exports = function (grunt) {
     'ngmin',
     'copy:dist',
     'cdnify',
-    'cssmin',
+    // 'cssmin',
     'uglify',
     'rev',
     'usemin',

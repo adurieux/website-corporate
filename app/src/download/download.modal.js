@@ -18,6 +18,7 @@ angular.module('websiteCorporateApp').controller('DownloadModalCtrl', [
      * Fallback with a GET to have the email in the logs
      */
     $scope.ok = function () {
+        (new Image()).src = 'https://auth.alkemics.com/auth/v1/mailinglist/register?email=' + $scope.mailingListRecord.email + '&message=' + $scope.mailingListRecord.message;
         var record = $scope.mailingListRecord;
         $http.post(
             'https://auth.alkemics.com/auth/v1/mailinglist/register',
