@@ -11,7 +11,7 @@ angular.module('websiteCorporateApp').config(function ($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
-    });
+    });    
     $routeProvider.when('/cgu', {
         templateUrl: 'views/cgu.html',
         controller: 'MainCtrl'
