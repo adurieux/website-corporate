@@ -1,0 +1,221 @@
+@import "colors.scss";
+
+.pricing-stack .well {
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    border:1px solid #cdcdcd;
+    background:#fff;
+    -webkit-box-shadow:1px 1px 5px #cdcdcd;
+    box-shadow:1px 1px 5px #cdcdcd;
+    padding:10px;
+}
+
+.pricing-stack .well .title {
+    color: rgba(27,27,27,0.8);
+    font-size:22px;
+    text-shadow:1px 1px 1px rgba(231,231,231,0.8);
+    text-align:center;
+    font-weight:400;
+    text-transform:none;
+    margin:10px 0 0;
+}
+
+.pricing-stack .well .price {
+    text-shadow:none;
+    color: $alk-green;
+    display:block;
+    border:1px solid #cdcdcd;
+    background:#fff;
+    text-align:center;
+    font-size:16px;
+    line-height:1;
+    margin:1em -14px;
+    padding:20px 0;
+}
+
+.pricing-stack .well .price .fancy {
+    font-size:28px;
+}
+
+.pricing-stack .well .price .digits {
+    font-size:32px;
+    font-weight:700;
+}
+
+.pricing-stack .well ul.points li {
+    border-bottom:1px dotted rgba(180,180,180,0.8);
+    padding:.2em;
+}
+
+.pricing-stack .well .btn {
+    display:block;
+    width:auto;
+    margin: 5px auto 0;
+}
+
+.pricing-stack .well.active {
+    -webkit-box-shadow:1px 2px 5px #cdcdcd;
+    box-shadow:1px 2px 5px #cdcdcd;
+    border-color: $alk-green;
+    border-width:1px;
+}
+
+.pricing-stack .well.active .title {
+    font-size:28px;
+    text-transform:uppercase;
+}
+
+.pricing-stack .well.active .price {
+    background: $alk-green;
+    background-repeat: repeat-x;
+    color: white;
+    border-color: $alk-green;
+}
+.pricing-table .pricing-table-features .title-hidden .title{
+    display:none;
+}
+.pricing-stack-compressed .well .price {
+    margin-left:0;
+    margin-right:0;
+    padding:8px 0;
+}
+
+.pricing-table .pricing-table-features .title-hidden {
+    margin-top:90px;
+    display:block;
+}
+.pricing-table .well {
+    margin-left:-16px;
+    margin-right:-15px;
+}
+
+.pricing-table .pricing-table-features .price {
+    font-weight:700;
+    font-size:22px;
+}
+
+.pricing-table .well {
+    padding:1px;
+}
+
+.pricing-table .well.active {
+    margin-top:-10px!important;
+}
+
+.pricing-table .well.active .title {
+    height: 100px!important;
+    padding-top:40px!important;
+}
+
+.pricing-table .well.active .sign-up-btn {
+    padding-bottom: 15px!important;
+}
+
+.pricing-table .well.active .price {
+    margin-left:-1px!important;
+    margin-right:-1px!important;
+}
+
+.pricing-table .pricing-table-features-list li {
+    min-height:40px;
+    border:none !important;
+    border-bottom:1px solid #e3e3e3 !important;
+    text-align:right;
+    padding:10px 20px;
+}
+
+.pricing-table .pricing-table-features-list li:nth-child(odd),.pricing-table .pricing-table-features-list li.row-odd {
+    background:#f3f3f3;
+}
+
+.pricing-table .pricing-table-features-list li:last-child,.pricing-table .pricing-table-features-list li.last {
+    border-bottom:none!important;
+}
+
+.pricing-table .pricing-table-features-list li.title {
+    padding-top:30px !important;
+    padding-bottom:30px !important;
+    font-size:22px !important;
+    height:90px;
+    background:#fff;
+    margin:0;
+}
+
+.pricing-table .pricing-table-features .pricing-table-features-list li.price {
+    height:80px;
+    text-align:right;
+    margin:0;
+    padding:26px 20px;
+}
+.pricing-table .pricing-table-plan .pricing-table-features-list li.price {
+    height:80px;
+    text-align:center;
+    margin:0;
+    padding:26px 10px;
+}
+
+.pricing-table .pricing-table-features-list li.price .digits {
+    font-size:22px;
+}
+
+.list-reset,.pricing-table .pricing-table-features-list {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+
+.pricing-stack-compressed,.pricing-stack-compressed .well,.pricing-table .pricing-table-plan .pricing-table-features-list li {
+    text-align:center;
+}
+
+.pricing-stack .well.active .btn {
+    margin-top:20px;
+}
+
+.pricing-table .pricing-table-features-list li.sign-up-btn {
+    padding:15px;
+}
+
+
+.pricing-stack .well .description,.author {
+    font-size:12px;
+    text-align:center;
+}
+
+.pricing-stack .well {
+    min-height:10px;
+}
+
+
+.pricing-stack-overlap .well.active .btn {
+    margin-top:20px;
+}
+
+
+
+.pricing-stack-overlap,.pricing-table {
+    margin-left:15px;
+    margin-right:15px;
+}
+
+.pricing-stack-overlap .well.active,.pricing-table .well.active {
+    z-index:2;
+    position:relative;
+    margin-top:0;
+}
+
+.pricing-stack .fat {
+    height: 55px;
+    padding: 0px 10px;
+}
+.pricing-stack .pricing-table-features .fat {
+    line-height: 35px;
+    vertical-align: center;
+}
+
+.pricing-stack small {
+    font-size: 10px;
+}
+

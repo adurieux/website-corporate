@@ -33,7 +33,8 @@
     "karma": "~0.12.9",
     "karma-ng-html2js-preprocessor": "~0.1.0",
     "grunt-aws-s3": "~0.8.1",
-    "grunt-contrib-compress": "~0.8.0"
+    "grunt-contrib-compress": "~0.8.0",
+    "grunt-shell": "~0.6.4"
   },
   "engines": {
     "node": ">=0.8.0"

@@ -1,0 +1,93 @@
+<div ng-include="'src/service/header.html'"></div>
+
+<div class="container-fluid" id="preview">
+    <div class="row">
+        <div class="col-md-7">
+            <div ng-if="!slide.screen" class="noscreen-container" >
+                <img src="/images/home/services/scan/hiku.png" class="screen-full" ng-if="slides.scan.active"/>
+            </div>
+            <div class="screen-container" ng-if="slide.screen">
+                <div class="screen-border">
+                    <div class="screen-space screen-stream" ng-if="slides.stream.active"></div>
+
+                    <!--<div class="screen-space screen-link" ng-if="slides.link.active"></div>-->
+                    <!--<div class="screen-space screen-coupon" ng-if="slides.coupon.active"></div>-->
+                    <div class="screen-space screen-shoppinglist" ng-if="slides.shoppinglist.active"></div>
+                    <!--<div class="screen-space screen-inbanner" ng-if="slides.inbanner.active"></div>-->
+
+                    <!--<div class="screen-space screen-search" ng-if="slides.search.active"></div>-->
+                    <div class="screen-space screen-substitution" ng-if="slides.substitution.active"></div>
+                    <!--<div class="screen-space screen-recommandation" ng-if="slides.recommandation.active"></div>-->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div id="carousel-main">
+                <div ng-if="slides.stream.active">
+                    <div ng-include="'src/service/data/stream-preview.html'"></div>
+                </div>
+
+                <!--<div ng-if="slides.link.active">
+                    <div ng-include="'src/service/advertising/link-preview.html'"></div>
+                </div>-->
+                <!--<div ng-if="slides.coupon.active">
+                    <div ng-include="'src/service/advertising/coupon-preview.html'"></div>
+                </div>-->
+                <div ng-if="slides.shoppinglist.active">
+                    <div ng-include="'src/service/advertising/shoppinglist-preview.html'"></div>
+                </div>
+                <!--<div ng-if="slides.inbanner.active">
+                    <div ng-include="'src/service/advertising/inbanner-preview.html'"></div>
+                </div>-->
+
+                <!--<div ng-if="slides.search.active">
+                    <div ng-include="'src/service/webservice/substitution-preview.html'"></div>
+                </div>-->
+                <div ng-if="slides.scan.active">
+                    <div ng-include="'src/service/webservice/scan-preview.html'"></div>
+                </div>
+                <div ng-if="slides.substitution.active">
+                    <div ng-include="'src/service/webservice/substitution-preview.html'"></div>
+                </div>
+                <!--<div active="slides.recommandation.active">
+                    <div ng-include="'src/service/webservice/substitution-preview.html'"></div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="features">
+    <div ng-if="slides.stream.active">
+        <div ng-include="'src/service/data/stream-arguments.html'"></div>
+    </div>
+
+    <div ng-if="slides.link.active">
+        <div ng-include="'src/service/advertising/link-arguments.html'"></div>
+    </div>
+    <div ng-if="slides.inbanner.active">
+        <div ng-include="'src/service/advertising/link-arguments.html'"></div>
+    </div>
+    <div ng-if="slides.coupon.active">
+        <div ng-include="'src/service/advertising/link-arguments.html'"></div>
+    </div>
+    <div ng-if="slides.shoppinglist.active">
+        <div ng-include="'src/service/advertising/link-arguments.html'"></div>
+        <!--<div ng-include="'src/service/advertising/shoppinglist-arguments.html'"></div>-->
+    </div>
+
+    <div ng-if="slides.scan.active">
+        <div ng-include="'src/service/webservice/scan-arguments.html'"></div>
+    </div>
+    <div ng-if="slides.search.active">
+        <div ng-include="'src/service/webservice/substitution-arguments.html'"></div>
+    </div>
+    <div ng-if="slides.substitution.active">
+        <div ng-include="'src/service/webservice/substitution-arguments.html'"></div>
+    </div>
+    <div ng-if="slides.recommandation.active">
+        <div ng-include="'src/service/webservice/substitution-arguments.html'"></div>
+    </div>
+</div>
+
+

@@ -1,15 +1,16 @@
-$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/";
 $iconSpritePath: "../images/glyphicons-halflings.png";
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
 @import "colors.scss";
 @import "_variables.scss";
-@import "sass-bootstrap/lib/bootstrap";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
 @import "navbar.scss";
 @import "home.scss";
 @import "stream.scss";
 @import "footer.scss";
 @import "cgu.scss";
+@import "pricing.scss";
 @import "sdk-dashboard/src/autocomplete.scss";
 
 
@@ -31,13 +32,13 @@ body {
     padding-bottom: 0px;
 }
 
-#corporate h1 {
-    color: $alk-orange;
-}
 #stream h1 {
     color: $alk-green;
 }
 
+.form-horizontal .control-label.text-left {
+	text-align: left;
+}
 
 .drop-target {
   border: 5px dashed #999;
@@ -55,4 +56,3 @@ body {
   background: rgba(255, 255, 255, 0.4);
   border-color: green;
 }
-

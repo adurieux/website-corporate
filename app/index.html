@@ -57,11 +57,10 @@
 
     <!-- Fonts & CSS -->
     <link href='//fonts.googleapis.com/css?family=Varela:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -74,14 +73,14 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-controller="HeaderCtrl">
         <div class="container">
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="/#/">Accueil</a></li>
                     <!--<li><a href="/#/company/customers">Clients</a></li>-->
-                    <li><a href="mailto:contact@alkemics.com">Contact</a></li>
-                    <li><a target="_blank" href="https://twitter.com/alkemicscom"><i class="fa fa-twitter"></i></a></li>
+                    <li href="/#/" ng-click="subscribe('Je voudrais avoir des détails au sujet de ...')"><a>Contact</a></li>
+                    <li><a target="_blank" href="https://twitter.com/alkemics"><i class="fa fa-twitter"></i></a></li>
                     <li><a target="_blank" href="https://www.linkedin.com/company/j-r-me"><i class="fa fa-linkedin"></i></a></li>
                     <!--<li><a target="_blank" href="https://www.facebook.com/Alkemics"><i class="fa fa-facebook"></i></a></li>-->
                 </ul>
@@ -89,16 +88,19 @@
         </div>
     </div>
 
-    <div ng-view=""></div>
+    <div ng-view="">
 
-    <footer class="navbar-inverse">
+    </div>
+
+    <footer class="navbar-inverse" ng-controller="HeaderCtrl">
         <div class="container">
             <div class="col-md-1"></div>
             <div class="col-md-2">
                 <h2 class="color-company">À propos</h2>
                 <ul>
-                    <!--<li><a href="/#/company/customers">Clients</a></li>
-                    <li><a href="/#/company/team">Équipe</a></li>-->
+                    <!--<li><a href="/#/company/customers">Clients</a></li>-->
+                    <!--<li><a href="/#/company/team">Équipe</a></li>-->
+                    <!--<li><a href="/#/about/technology">Avantage compétitif</a></li>-->
                     <li><a href="http://www.alkemics.com/resources/corporate/hiring/postings/jobs.pdf">Carrières</a></li>
                     <li><a href="/#/cgu">Termes &amp; conditions</a></li>
                 </ul>
@@ -106,7 +108,7 @@
             <div class="col-md-2">
                 <h2 class="color-advertising-transparent">Advertising</h2>
                 <ul>
-                    <li><a href="/#/service/advertising/productlink">Product link</a></li>
+                    <li><a href="/#/service/advertising/link">Product link</a></li>
                     <!--<li><a href="/#/service/advertising/coupon">Virtual coupon</a></li>-->
                     <li><a href="/#/service/advertising/shoppinglist">Shopping list</a></li>
                     <li><a href="/#/service/advertising/inbanner">In banner</a></li>
@@ -115,25 +117,25 @@
             <div class="col-md-2">
                 <h2 class="color-stream-transparent">Data</h2>
                 <ul>
-                    <li><a href="/#/service/data/search">Product stream</a></li>
+                    <li><a href="/#/service/data/stream">Product stream</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
                 <h2 class="color-api-transparent">Web Services</h2>
                 <ul>
+                    <li><a href="/#/service/webservices/scan">Barcode scan</a></li>
                     <li><a href="/#/service/webservices/search">Search</a></li>
                     <li><a href="/#/service/webservices/substitution">Substitution</a></li>
-                    <!--<li><a href="/#/service/webservices/barcodescan">Barcode scan</a></li>-->
-                    <li><a href="/#/service/webservices/recommendation">Recommendation</a></li>
+                    <!--<li><a href="/#/service/webservices/recommandation">Recommandation</a></li>-->
                 </ul>
             </div>
             <div class="col-md-2">
                 <h2>Contact</h2>
                 <div class="social">
-                    <a target="_blank" href="https://twitter.com/alkemicscom"><i class="fa fa-twitter"></i></a> &nbsp; &nbsp;
+                    <a target="_blank" href="https://twitter.com/alkemics"><i class="fa fa-twitter"></i></a> &nbsp; &nbsp;
                     <a target="_blank" href="https://www.linkedin.com/company/j-r-me"><i class="fa fa-linkedin"></i></a> &nbsp; &nbsp;
                     <!--<a target="_blank" href="https://www.facebook.com/Alkemics"><i class="fa fa-facebook"></i></a> &nbsp; &nbsp;-->
-                    <a href="mailto:contact@alkemics.com"><i class="fa fa-envelope"></i></a>
+                    <a ng-click="subscribe()"><i class="fa fa-envelope"></i></a>
                 </div>
             </div>
             <div class="col-md-1"></div>
@@ -161,17 +163,39 @@
     <!-- bower:js -->
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/sass-bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-http-auth/src/http-auth-interceptor.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.controller.js"></script>
-    <script src="scripts/controllers/download.controller.js"></script>
+    <script src="bower_components/sdk-dashboard/src/app.js"></script>
+    <script src="bower_components/sdk-dashboard/src/sdk-user.js"></script>
+
+    <script src="src/app.js"></script>
+    <script src="src/home/home.controller.js"></script>
+    <script src="src/header/header.controller.js"></script>
+    <script src="src/service/service.controller.js"></script>
+    <script src="src/contact/contact.controller.js"></script>
+    <script src="src/cgu/cgu.controller.js"></script>
+    <script src="src/about/technology/technology.controller.js"></script>
+    <script src="src/download/download.controller.js"></script>
+    <script src="src/download/download.modal.js"></script>
     <!-- endbuild -->
 </body>
 </html>
