@@ -417,7 +417,18 @@ module.exports = function (grunt) {
                 ],
 
 
-            }},
+            },
+            preprod: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= yeoman.app %>',
+                        src: ['**'],
+                        dest: ''                        
+                    },
+                ]
+            }
+          },
 
     // By default, your `index.html`'s <!-- Usemin block --> will take care of
     // minification. These next options are pre-configured if you do not wish
@@ -493,12 +504,12 @@ module.exports = function (grunt) {
     'bower-install',
     'useminPrepare',
     'concurrent:dist',
-    'autoprefixer',
+    // 'autoprefixer',
     'concat',
     'ngmin',
     'copy:dist',
     'cdnify',
-    'cssmin',
+    // 'cssmin',
     'uglify',
     'rev',
     'usemin',
