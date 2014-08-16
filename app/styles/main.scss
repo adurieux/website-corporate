@@ -7,10 +7,9 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
 @import "navbar.scss";
 @import "home.scss";
-@import "stream.scss";
+@import "sidebar.scss";
 @import "footer.scss";
 @import "cgu.scss";
-@import "pricing.scss";
 @import "sdk-dashboard/src/autocomplete.scss";
 
 
@@ -55,4 +54,13 @@ body {
 .drop-target.dragover {
   background: rgba(255, 255, 255, 0.4);
   border-color: green;
+}
+
+.true-link {
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.pointer-link {
+    cursor: pointer;
 }

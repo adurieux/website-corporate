@@ -1,27 +1,25 @@
+#login-holder {
+    .center {
+        width: 400px;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -100px 0 0 -200px;
+    }
 
+    .bottom{
+        position:fixed;
+        bottom: 0px;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
 
-
-.center {
-    width: 400px;
-    height: 200px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -100px 0 0 -200px;
+    .copyright{
+        margin-bottom: 40px;
+    }
 }
-
-.bottom{
-    position:fixed;
-    bottom: 0px;
-    width: 100%;
-    left: 0;
-    right: 0;
-}
-
-.copyright{
-    margin-bottom: 40px;
-}
-
 .full-screen {
     position: fixed;
     top: 0;

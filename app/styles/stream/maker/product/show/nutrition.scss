@@ -1,0 +1,39 @@
+
+.productnutritionalquantity-precision {
+    width: 50px;
+}
+.pnq-name {
+    text-align: right;
+}
+
+.table tbody tr td.psq-line {
+    background-color: #eeeeee;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+.table thead tr th.psq-col,
+.table tbody tr td.psq-col {
+    border-left: 1px solid #dddddd;
+}
+.table .separator {
+    border-collapse: collapse;
+    border-top-width: 1px;
+}
+.separator {
+     margin-right: 30px;
+}
+
+.table {
+    border-collapse: separate;
+}
+.table > tbody {
+    margin-bottom: 20px;
+}
+.table > tbody > tr > td{
+    border-top: 0px;
+}
+.table > tbody > tr {
+    border-top: 0px;
+    border-bottom: 0px;
+    border-spacing: 0px;
+}

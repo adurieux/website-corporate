@@ -1,0 +1,47 @@
+.product {
+	cursor: pointer;
+	border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+
+    .name {
+        height: 3em;
+        overflow: hidden;
+        text-align: center;
+    }
+    .packaging {
+        height: 1.5em;
+        overflow: hidden;
+        text-align: center;
+    }
+    .picture {
+        margin-top: 10px;
+        background-color: white;
+    }
+    .progress {
+        height: 20px;
+    }
+    &.new {
+        color: gray;
+        cursor: pointer;
+        a {
+            color: inherit;
+        }
+        .picture{
+            text-align: center;
+            font-size: 80px;
+        }
+    }
+	.missing-picture {
+	    background-position:center center;
+	    background-image: url('/images/missing.png');
+	    background-repeat: no-repeat;
+	    background-size: 80% 80%;
+	}
+	.product-icons {
+	    height: 15px;
+	    text-align: center;
+	    margin-bottom: 10px;
+	}
+}
+
+
