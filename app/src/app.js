@@ -4,7 +4,7 @@ angular.module('websiteCorporateApp', [
     'ngCookies',
     'ngRoute',
     'ui.bootstrap',
-    'sdk-dashboard',
+    'sdk-dashboard'
 ]);
 
 
