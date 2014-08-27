@@ -1,6 +1,5 @@
-$icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/";
-$iconSpritePath: "../images/glyphicons-halflings.png";
-$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+$fa-font-path: "/bower_components/font-awesome/fonts";
+@import "font-awesome/scss/font-awesome";
 
 @import "colors.scss";
 @import "_variables.scss";
@@ -12,12 +11,12 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 @import "cgu.scss";
 @import "sdk-dashboard/src/autocomplete.scss";
 
-
 @import "user/login/login.scss";
 @import "portlet.scss";
 @import "tile.scss";
 @import "metric.scss";
 @import "placeholder.scss";
+@import "browsehappy.scss";
 
 .browsehappy {
     margin: 0.2em 0;
@@ -63,4 +62,10 @@ body {
 }
 .pointer-link {
     cursor: pointer;
+}
+
+.inline-logo {
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
 }

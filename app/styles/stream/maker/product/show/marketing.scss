@@ -1,0 +1,32 @@
+.screen-bottom-container {
+    height: 500px;
+    background-image:url(/images/home/screen-bottom.png);
+    background-repeat: no-repeat;
+    background-position:bottom left;
+    margin-right: -15px;
+}
+.screen-bottom-border {
+    padding-bottom: 153px;
+    padding-left: 135px;
+    height: 100%;
+}
+.screen-bottom-content {
+    background-color: beige;
+    height: 100%;
+    padding: 1px 20px 20px 20px;
+}
+.preview .preview-image {
+    width: 200px;
+}
+.preview .preview-container {
+    width: 200px;
+    margin-right: 20px;
+}
+.preview .preview-legend {
+    max-height: 270px;
+    overflow: hidden;
+}
+.preview h3 {
+    max-height: 2em;
+    overflow: hidden;
+}

@@ -1,0 +1,28 @@
+.browserhappy {
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    z-index: 9999;
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    font-size: 15px;
+    color: white;
+    background-color: red;
+}
+.browserhappy a{
+    color: white;
+    text-decoration: underline;
+}
+.warning-sign-left {
+    font-size: 60px;
+    color: white;
+    float:left;
+    margin-left: 40px;
+}
+.warning-sign-right {
+    font-size: 60px;
+    color: white;
+    float:right;
+    margin-right: 40px;
+}

@@ -1,5 +1,7 @@
-#login-holder {
-    .center {
+#login-holder{
+
+    color: white;
+    .center{
         width: 400px;
         height: 200px;
         position: absolute;
@@ -20,7 +22,7 @@
         margin-bottom: 40px;
     }
 }
-.full-screen {
+.full-screen{
     position: fixed;
     top: 0;
     left: 0;
