@@ -9,6 +9,7 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
 @import "sidebar.scss";
 @import "footer.scss";
 @import "cgu.scss";
+@import "upload.scss";
 @import "sdk-dashboard/src/autocomplete.scss";
 
 @import "user/login/login.scss";
@@ -38,22 +39,7 @@ body {
 	text-align: left;
 }
 
-.drop-target {
-  border: 5px dashed #999;
-  text-align: center;
-  color: #999;
-  font-size: 16px;
-  width: 80%;
-  height: 200px;
-  line-height: 200px;
-  cursor: pointer;
-  margin : 5px auto;
-}
 
-.drop-target.dragover {
-  background: rgba(255, 255, 255, 0.4);
-  border-color: green;
-}
 
 .true-link {
     color: inherit;
