@@ -17,7 +17,7 @@ angular.module('websiteCorporateApp').controller('ServiceCtrl', [
         scan: {active: false, screen: false},
         search: {active: false, screen: true},
         substitution: {active: false, screen: true},
-        recommandation: {active: false, screen: true},
+        recommandation: {active: false, screen: true}
     };
 
     /**
@@ -38,7 +38,7 @@ angular.module('websiteCorporateApp').controller('ServiceCtrl', [
         });
     };
 
-    $scope.goto = function(url) {
+    $scope["goto"] = function(url) {
         $window.location.href = url;
     };
 
@@ -46,11 +46,11 @@ angular.module('websiteCorporateApp').controller('ServiceCtrl', [
         var service = $routeParams.service;
         if (service) {
             // Some routes do not have a dedicated page yet
-            if (service == 'link') {
+            if (service === 'link') {
                 service = 'shoppinglist';
-            } else if (service == 'inbanner') {
+            } else if (service === 'inbanner') {
                 service = 'shoppinglist';
-            } else if (service == 'search') {
+            } else if (service === 'search') {
                 service = 'substitution';
             }
             for (var name in $scope.slides) {
@@ -60,7 +60,7 @@ angular.module('websiteCorporateApp').controller('ServiceCtrl', [
                     return;
                 }
             }
-        };
+        }
         $scope.slides.stream.active = true;
     };
     init();

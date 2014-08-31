@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Modal that allows the user to register on the mailing list
  */

@@ -1,0 +1,40 @@
+.role {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    .role-delete {
+        position: relative;
+        top: -6px;
+        right: -2px;
+        cursor: pointer;
+        color: inherit;
+    }
+    .role-description {
+        line-height: 40px;
+        vertical-align: middle;
+        margin-right: 7px;
+    }
+    .role-add{
+        line-height: 40px;
+        font-size: 30px;
+        vertical-align: middle;
+        text-align: center;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        color: lightgray;
+    }
+}
+.role-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+}
+.role-default {
+    background-color: white;
+    border-color: lightgray;
+    color: black;
+    cursor: pointer;
+}

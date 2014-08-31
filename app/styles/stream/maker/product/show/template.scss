@@ -1,0 +1,46 @@
+
+.actions {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 16.66667%;
+    background-color: white;
+    border-right: 1px solid lightgray;
+	padding: 10px;
+
+}
+
+.nav-tabs > li.active > a.product-tab {
+	color: black;
+	background-color: white;
+}
+
+.nav-tabs > li > a.product-tab {
+	color: black;
+	background-color: #eeeeee;
+}
+
+.nav-tabs > li > a.product-tab:hover {
+	color: black;
+	background-color: lightgray;
+}
+
+.product-status {
+    margin-top: 17px;
+    font-size: 16px;
+}
+
+.sidebar .nav li{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    background-color: #5eac25;
+    border-top: 1px solid white;
+}
+.sidebar .nav li.last{
+    border-bottom: 1px solid white;
+}
+.sidebar .nav li.active{
+    color: black;
+    background-color: white;
+}

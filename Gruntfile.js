@@ -100,7 +100,7 @@ module.exports = function (grunt) {
       },
       all: [
         'Gruntfile.js',
-        '<%= yeoman.app %>/scripts/{,*/}*.js'
+        '<%= yeoman.app %>/src/**/*.js'
       ],
       test: {
         options: {
@@ -291,7 +291,7 @@ module.exports = function (grunt) {
         }]
       },
       prod: {
-        expand: true, cwd: '<%= yeoman.app %>', dest: '<%= yeoman.dist %>', src: ['**/*.png', '**/*.html', '!**/bower_components/**', '!index.html'],
+        expand: true, cwd: '<%= yeoman.app %>', dest: '<%= yeoman.dist %>', src: ['**/*.png', '**/*.html', '!**/bower_components/**', '!index.html']
 
       },
       styles: {
@@ -418,9 +418,7 @@ module.exports = function (grunt) {
                             ContentEncoding: 'gzip'
                         }
                     }
-                ],
-
-
+                ]
             },
             preprod: {
                 files: [
@@ -429,7 +427,7 @@ module.exports = function (grunt) {
                         cwd: '<%= yeoman.app %>',
                         src: ['**'],
                         dest: ''
-                    },
+                    }
                 ]
             }
           },
@@ -437,16 +435,16 @@ module.exports = function (grunt) {
     // By default, your `index.html`'s <!-- Usemin block --> will take care of
     // minification. These next options are pre-configured if you do not wish
     // to use the Usemin blocks.
-    // cssmin: {
-    //   dist: {
-    //     files: {
-    //       '<%= yeoman.dist %>/styles/main.css': [
-    //         '.tmp/styles/{,*/}*.css',
-    //         '<%= yeoman.app %>/styles/{,*/}*.css'
-    //       ]
-    //     }
-    //   }
-    // },
+    cssmin: {
+      dist: {
+        files: {
+          '<%= yeoman.dist %>/styles/main.css': [
+            '.tmp/styles/{,*/}*.css',
+            '<%= yeoman.app %>/styles/{,*/}*.css'
+          ]
+        }
+      }
+    },
     // uglify: {
     //   dist: {
     //     files: {
@@ -485,6 +483,7 @@ module.exports = function (grunt) {
       'clean:server',
       'concurrent:server',
       'autoprefixer',
+      'jshint',
       'connect:livereload',
       'watch'
     ]);

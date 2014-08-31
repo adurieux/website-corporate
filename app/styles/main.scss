@@ -1,24 +1,23 @@
-$icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/";
-$iconSpritePath: "../images/glyphicons-halflings.png";
-$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+$fa-font-path: "/bower_components/font-awesome/fonts";
+@import "font-awesome/scss/font-awesome";
 
 @import "colors.scss";
 @import "_variables.scss";
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
 @import "navbar.scss";
 @import "home.scss";
-@import "stream.scss";
+@import "sidebar.scss";
 @import "footer.scss";
 @import "cgu.scss";
-@import "pricing.scss";
+@import "upload.scss";
 @import "sdk-dashboard/src/autocomplete.scss";
-
 
 @import "user/login/login.scss";
 @import "portlet.scss";
 @import "tile.scss";
 @import "metric.scss";
 @import "placeholder.scss";
+@import "browsehappy.scss";
 
 .browsehappy {
     margin: 0.2em 0;
@@ -40,19 +39,19 @@ body {
 	text-align: left;
 }
 
-.drop-target {
-  border: 5px dashed #999;
-  text-align: center;
-  color: #999;
-  font-size: 16px;
-  width: 80%;
-  height: 200px;
-  line-height: 200px;
-  cursor: pointer;
-  margin : 5px auto;
+
+
+.true-link {
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.pointer-link {
+    cursor: pointer;
 }
 
-.drop-target.dragover {
-  background: rgba(255, 255, 255, 0.4);
-  border-color: green;
+.inline-logo {
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
 }
