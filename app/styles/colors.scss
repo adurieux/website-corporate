@@ -33,7 +33,7 @@ $alk-yellow-darker: rgba(241,201,0,1);
     color: $alk-red;
 }
 .color-red-inverse{
-    background-color: $alk-red;
+    background-color: $alk-red !important;
     color:white;
 }
 
@@ -41,62 +41,56 @@ $alk-yellow-darker: rgba(241,201,0,1);
     color: $alk-green;
 }
 .color-green-inverse{
-    background-color: $alk-green;
+    background-color: $alk-green !important;
     color:white;
 }
 
 .color-darkgreen{
-    background-color: $alk-darkgreen;
-    color:white;
+    color: $alk-darkgreen;
 }
 .color-darkgreen-inverse{
-    background-color: $alk-darkgreen;
+    background-color: $alk-darkgreen !important;
     color:white;
 }
 
 .color-blue{
-    background-color: $alk-blue;
-    color:white;
+    color: $alk-blue;
 }
 .color-blue-inverse{
-    background-color: $alk-blue;
+    background-color: $alk-blue !important;
     color:white;
 }
 
 .color-yellow{
-    background-color: $alk-yellow;
-    color:white;
+    color: $alk-yellow;
 }
 .color-yellow-inverse{
-    background-color: $alk-yellow;
+    background-color: $alk-yellow !important;
     color:white;
 }
 
 .color-orange{
-    background-color: $alk-orange;
-    color:white;
+    color: $alk-orange;
 }
 .color-orange-inverse{
-    background-color: $alk-orange;
+    background-color: $alk-orange !important;
     color:white;
 }
 
 .color-pink{
-    background-color: $alk-pink;
-    color:white;
+    color: $alk-pink;
 }
 .color-pink-inverse{
-    background-color: $alk-pink;
+    background-color: $alk-pink !important;
     color:white;
 }
 
 
 .color-purple{
-    background-color: $alk-purple;
-    color:white;
+    color: $alk-purple;
 }
 .color-purple-inverse{
-    background-color: $alk-purple;
+    background-color: $alk-purple !important;
     color:white;
 }
 
@@ -106,54 +100,84 @@ $alk-yellow-darker: rgba(241,201,0,1);
 }
 
 // =================================================================================================
+//                                          LEVEL COLORS
+// =================================================================================================
+
+.color-debug-inverse {
+    @extend .color-blue-inverse
+}
+
+.color-warning-inverse {
+    @extend .color-yellow-inverse
+}
+
+.color-info-inverse {
+    @extend .color-darkgreen-inverse
+}
+.color-success-inverse {
+    @extend .color-green-inverse
+}
+
+.color-debug-inverse {
+    @extend .color-purple-inverse
+}
+
+.color-danger-inverse {
+    @extend .color-red-inverse
+}
+.color-error-inverse {
+    @extend .color-red-inverse
+}
+
+// =================================================================================================
 //                                          SERVICE COLORS
 // =================================================================================================
 
-.color-analytics {
+.color-analytics{
     background-color: white;
     color: $alk-purple;
 }
-.color-analytics-transparent {
+.color-analytics-transparent{
     color: $alk-purple;
 }
-.color-analytics-inverse {
+.color-analytics-inverse{
     background-color: $alk-purple;
     color: white;
 }
 
-.color-advertising {
+.color-advertising{
     background-color: white;
     color: $alk-orange;
 }
-.color-advertising-transparent {
+.color-advertising-transparent{
     color: $alk-orange;
 }
-.color-advertising-inverse {
+.color-advertising-inverse{
     background-color: $alk-orange;
     color: white;
 }
-.color-advertising-light-inverse {
+.color-advertising-light-inverse{
     background-color: $alk-orange-lighter;
     color: white;
 }
 
-.color-stream {
+.color-stream{
     background-color: white;
     color: $alk-green;
 }
-.color-stream-transparent {
+.color-stream-transparent{
     color: $alk-green;
 }
-.color-stream-inverse {
+.color-stream-inverse{
     background-color: $alk-green;
     color: white;
 }
 
-.color-api {
+.color-api{
     background-color: white;
     color: $alk-yellow;
 }
-.color-api-transparent {
+.color-api-transparent{
     color: $alk-yellow;
 }
 .color-api-inverse{
@@ -161,7 +185,7 @@ $alk-yellow-darker: rgba(241,201,0,1);
     color: white;
 }
 
-.color-company {
+.color-company{
     color: rgb(100, 100, 100);
 }
 
@@ -172,91 +196,91 @@ $alk-yellow-darker: rgba(241,201,0,1);
 //                                          SEMANTIC COLORS
 // =================================================================================================
 
-.color-plugin {
+.color-plugin{
     background-color: $alk-yellow;
     color:white;
 }
-.color-brand {
+.color-brand{
     background-color: $alk-blue;
     color:white;
 }
-.color-product {
+.color-product{
     background-color: $alk-blue;
     color:white;
 }
 .color-placement,
-.color-action {
+.color-action{
     background-color: $alk-orange;
     color:white;
 }
 .color-organization,
-.color-member {
+.color-member{
     background-color: $alk-red;
     color:white;
 }
-.color-semantic {
+.color-semantic{
     background-color: $alk-yellow;
     color:black;
 }
-.color-page {
+.color-page{
     background-color: $alk-orange;
     color:white;
 }
-.color-website {
+.color-website{
     background-color: $alk-orange;
     color:white;
 }
-.color-calendar {
+.color-calendar{
     background-color: $brand-deprecated;
     color:white;
 }
-.color-disabled {
+.color-disabled{
     background-color: $gray-lighter;
     color:white;
 }
 .color-shop,
-.color-store {
+.color-store{
     background-color: $brand-stream;
     color:white;
 }
 
-.color-brand-inversed {
+.color-brand-inversed{
     color: $alk-blue;
 }
-.color-product-inversed {
+.color-product-inversed{
     color: $alk-blue;
 }
 .color-placement-inversed,
-.color-action-inversed {
+.color-action-inversed{
     color: $brand-success;
     background-color:white;
 }
 .color-organization-inversed,
-.color-member-inversed {
+.color-member-inversed{
     color: $alk-red;
 }
-.color-semantic-inversed {
+.color-semantic-inversed{
     color: $alk-orange;
 }
-.color-page-inversed {
+.color-page-inversed{
     color: $alk-orange;
 }
-.color-website-inversed {
+.color-website-inversed{
     color: $alk-orange;
 }
-.color-calendar-inversed {
+.color-calendar-inversed{
     color: $brand-deprecated;
 }
-.color-disabled-inversed {
+.color-disabled-inversed{
     color: $gray-lighter;
 }
 .color-shop-inversed,
 .color-store-inversed,
-.color-stream-inversed {
+.color-stream-inversed{
     color: $brand-stream;
 }
 
-.color-settings {
+.color-settings{
     color: #999999;
     background-color: #222222;
 }
