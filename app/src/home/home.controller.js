@@ -1,14 +1,14 @@
 'use strict';
 
 angular.module('websiteCorporateApp').controller('MainCtrl', [
-    '$scope', '$http', '$modal', '$routeParams', '$window',
-    function ($scope, $http, $modal, $routeParams, $window) {
+    '$scope', '$modal', '$anchorScroll', '$location',
+    function ($scope, $modal, $anchorScroll, $location) {
 
     /**
      * Displays the contact form.
      */
     $scope.subscribe = function(message){
-        var modalInstance = $modal.open({
+        $modal.open({
             templateUrl: '/src/contact/modal.html',
             controller: 'ContactController',
             resolve: {
@@ -20,6 +20,15 @@ angular.module('websiteCorporateApp').controller('MainCtrl', [
                 }
             }
         });
+    };
+
+    $scope.scrollTo = function(id) {
+        $location.hash(id);
+        $anchorScroll();
+    };
+
+    $scope.range = function(n) {
+        return new Array(n);
     };
 
 }]);

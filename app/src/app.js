@@ -11,7 +11,7 @@ angular.module('websiteCorporateApp', [
 angular.module('websiteCorporateApp').config(function ($routeProvider) {
 
     $routeProvider.when('/', {
-        templateUrl: 'src/home/index.html',
+        templateUrl: 'src/home/index-en.html',
         controller: 'MainCtrl'
     });
 

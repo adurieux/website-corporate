@@ -24,7 +24,7 @@ angular.module('websiteCorporateApp').controller('ServiceCtrl', [
      * Displays the contact form.
      */
     $scope.subscribe = function(message){
-        var modalInstance = $modal.open({
+        $modal.open({
             templateUrl: '/src/contact/modal.html',
             controller: 'ContactController',
             resolve: {
