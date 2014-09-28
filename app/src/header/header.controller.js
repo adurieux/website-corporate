@@ -8,7 +8,7 @@ angular.module('websiteCorporateApp').controller('HeaderCtrl', [
      * Displays the contact form.
      */
     $scope.subscribe = function(message){
-        var modalInstance = $modal.open({
+        $modal.open({
             templateUrl: '/src/contact/modal.html',
             controller: 'ContactController',
             resolve: {
