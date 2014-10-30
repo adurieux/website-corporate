@@ -1,6 +1,10 @@
 {
   "name": "websitecorporate",
   "version": "0.0.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "git@github.com:alkemics/website-corporate.git"
+  },
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
