@@ -2,3 +2,14 @@
     color: #c09853;
     font-weight: bold;
 }
+
+.product-composition {
+	.ta-scroll-window {
+		&.form-control {
+			min-height: 50px;
+		}
+		> .ta-bind {
+			min-height: 80px;
+		}
+	}
+}
