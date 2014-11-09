@@ -1,0 +1,53 @@
+.sidemenu {
+    position: fixed;
+    top: 50px;
+    bottom: 0px;
+    display: none;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+.sidemenu li {
+    width: 100%;
+}
+.sidemenu li a{
+    text-transform: none;
+}
+@media (min-width: 768px) {
+    .sidemenu {
+        width: 165px;
+        display: block;
+    }
+    .sidemenu .nav {
+        margin-top: 90px;
+    }
+}
+@media (min-width: 992px) {
+    .sidemenu {
+        width: 215px;
+        display: block;
+    }
+}
+@media (min-width: 1200px) {
+    .sidemenu {
+        width: 265px;
+        display: block;
+    }
+}
+.step.active {
+    position: relative;
+    background: #e7e7e7;
+}
+.step.active:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #e7e7e7;
+    border-width: 25px;
+    margin-top: -25px;
+}
