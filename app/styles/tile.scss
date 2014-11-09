@@ -26,26 +26,16 @@
     color: #fff;
 }
 
-.tile-green-inverse {
-    background-color: $alk-green;
+.tile-disabled-inverse{
+    background-color: lightgray;
     color: white;
+    cursor: not-allowed;
 }
-
-.tile-orange-inverse {
-    background-color: $alk-orange;
+.tile-disabled-light-inverse{
+    background-color: #dddddd;
     color: white;
+    cursor: not-allowed;
 }
-
-.tile-green {
-    border-color: $alk-green;
-    color: $alk-green;
-}
-
-.tile-orange {
-    border-color: $alk-orange;
-    color: $alk-orange;
-}
-
 
 .icon-tile {
     margin-bottom: 15px;
