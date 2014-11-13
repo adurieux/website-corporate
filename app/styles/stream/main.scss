@@ -13,3 +13,7 @@
 @import "stream/user/login.scss";
 @import "stream/home/pricing.scss";
 @import "stream/home/register.scss";
+
+html, body, [ng-view] {
+	height: 100%;
+}
