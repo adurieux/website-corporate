@@ -94,7 +94,17 @@ $alk-yellow-darker: rgba(241,201,0,1);
     color: white;
 }
 
-.color-normal {
+.color-settings-inverse{
+    background-color: gray;
+    color: white;
+}
+.color-settings-light-inverse{
+    background-color: lightgray;
+    color: white;
+}
+
+
+.color-normal{
     background-color: white;
     color: black;
 }
@@ -104,29 +114,29 @@ $alk-yellow-darker: rgba(241,201,0,1);
 // =================================================================================================
 
 .color-debug-inverse {
-    @extend .color-blue-inverse
+    @extend .color-blue-inverse;
 }
 
 .color-warning-inverse {
-    @extend .color-yellow-inverse
+    @extend .color-yellow-inverse;
 }
 
 .color-info-inverse {
-    @extend .color-darkgreen-inverse
+    @extend .color-darkgreen-inverse;
 }
 .color-success-inverse {
-    @extend .color-green-inverse
+    @extend .color-green-inverse;
 }
 
 .color-debug-inverse {
-    @extend .color-purple-inverse
+    @extend .color-purple-inverse;
 }
 
 .color-danger-inverse {
-    @extend .color-red-inverse
+    @extend .color-red-inverse;
 }
 .color-error-inverse {
-    @extend .color-red-inverse
+    @extend .color-red-inverse;
 }
 
 // =================================================================================================
