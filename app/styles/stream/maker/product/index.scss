@@ -1,4 +1,6 @@
-.ratio{
+@import "colors.scss";
+
+.ratio {
     position:relative;
     width: 100%;
     height: 0;
@@ -9,4 +11,16 @@
     background-size: cover;
 
     border: 1px solid #eeeeee;
+}
+
+// Set this class on a label
+.inco-field {
+	&:after {
+		background-color: $alk-orange-darker;
+		color: white;
+		content: "INCO";
+		font-size: 0.8em;
+		margin-left: 0.5em;
+		padding: 0.25em;
+	}
 }
